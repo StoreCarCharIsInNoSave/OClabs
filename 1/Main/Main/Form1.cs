@@ -11,22 +11,33 @@ namespace Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(textBox1.Text);
-            int system = Convert.ToInt32(comboBox1.Text);
-            string result="";
-            if (system == 3)
+
+            try
             {
-                var dll = Assembly.LoadFile(System.AppContext.BaseDirectory+"\\toTrenary.dll");
-                foreach (Type type in dll.GetExportedTypes())
+                int num = Convert.ToInt32(textBox1.Text);
+                int system = Convert.ToInt32(comboBox1.Text);
+                string result = "";
+                if (system == 3)
                 {
-                    result = type.InvokeMember("toTrenary", BindingFlags.InvokeMethod, null, Activator.CreateInstance(type), new object[] { num }).ToString();
+                    var dll = Assembly.LoadFile(System.AppContext.BaseDirectory + "\\toTrenary.dll");
+                    foreach (Type type in dll.GetExportedTypes())
+                    {
+                        result = type.InvokeMember("toTrenary", BindingFlags.InvokeMethod, null, Activator.CreateInstance(type), new object[] { num }).ToString();
+                    }
+
                 }
+                else
+                {
+                    result = Convert.ToString(num, system);
+                }
+
+                MessageBox.Show(result);
             }
-            else {
-                result = Convert.ToString(num, system);
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+          
             }
-            
-            MessageBox.Show(result);
             
         }
        
