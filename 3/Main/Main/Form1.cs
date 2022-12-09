@@ -24,6 +24,7 @@ namespace Main
 
             SetWindowLong(p1, -20, 0x80000 | 0x20);
             SetWindowRgn(Handle, p1, true);
+            this.TopMost = true;
           
         }
 

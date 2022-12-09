@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lain\\Desktop\\OClabs\\3\\Main\\Main\\Main.csproj",
+      "projectUniqueName": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\3\\Main\\Main\\Main.csproj",
       "projectName": "Main",
-      "projectPath": "C:\\Users\\Lain\\Desktop\\OClabs\\3\\Main\\Main\\Main.csproj",
+      "projectPath": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\3\\Main\\Main\\Main.csproj",
       "packagesPath": "C:\\Users\\Lain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lain\\Desktop\\OClabs\\3\\Main\\Main\\obj\\",
+      "outputPath": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\3\\Main\\Main\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lain\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,7 @@
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {

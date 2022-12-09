@@ -1,0 +1,6 @@
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\bin\Debug\toTrenary.dll
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\bin\Debug\toTrenary.pdb
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\obj\Debug\toTrenary.csproj.AssemblyReference.cache
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\obj\Debug\toTrenary.csproj.CoreCompileInputs.cache
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\obj\Debug\toTrenary.dll
+C:\Users\LetsAllLoveLain\Desktop\OCLabs\1\toTrenary\toTrenary\obj\Debug\toTrenary.pdb
