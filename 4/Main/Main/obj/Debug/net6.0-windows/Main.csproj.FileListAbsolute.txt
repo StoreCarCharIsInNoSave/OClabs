@@ -32,3 +32,20 @@ C:\Users\Lain\Desktop\лабы универ\OClabs\4\Main\Main\obj\Debug\net6.0-
 C:\Users\Lain\Desktop\лабы универ\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.pdb
 C:\Users\Lain\Desktop\лабы универ\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.genruntimeconfig.cache
 C:\Users\Lain\Desktop\лабы универ\OClabs\4\Main\Main\obj\Debug\net6.0-windows\ref\Main.dll
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\bin\Debug\net6.0-windows\Main.exe
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\bin\Debug\net6.0-windows\Main.deps.json
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\bin\Debug\net6.0-windows\Main.runtimeconfig.json
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\bin\Debug\net6.0-windows\Main.dll
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\bin\Debug\net6.0-windows\Main.pdb
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.csproj.AssemblyReference.cache
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.Form1.resources
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.csproj.GenerateResource.cache
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.AssemblyInfoInputs.cache
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.AssemblyInfo.cs
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.csproj.CoreCompileInputs.cache
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.dll
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\refint\Main.dll
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.pdb
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\Main.genruntimeconfig.cache
+C:\Users\Lain\Desktop\fgf\OClabs\4\Main\Main\obj\Debug\net6.0-windows\ref\Main.dll

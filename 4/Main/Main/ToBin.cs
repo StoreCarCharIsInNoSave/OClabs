@@ -1,15 +1,15 @@
+ï»¿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.Reflection;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Main
 {
-    public partial class Form1 : Form
+    internal class Kernel32
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
 
         [StructLayout(LayoutKind.Sequential)]
         public struct SECURITY_ATTRIBUTES
@@ -27,6 +27,25 @@ namespace Main
             public int dwProcessId;
             public int dwThreadId;
         }
+
+        const uint ZERO_FLAG = 0x00000000;
+        const uint CREATE_BREAKAWAY_FROM_JOB = 0x01000000;
+        const uint CREATE_DEFAULT_ERROR_MODE = 0x04000000;
+        const uint CREATE_NEW_CONSOLE = 0x00000010;
+        const uint CREATE_NEW_PROCESS_GROUP = 0x00000200;
+        const uint CREATE_NO_WINDOW = 0x08000000;
+        const uint CREATE_PROTECTED_PROCESS = 0x00040000;
+        const uint CREATE_PRESERVE_CODE_AUTHZ_LEVEL = 0x02000000;
+        const uint CREATE_SEPARATE_WOW_VDM = 0x00001000;
+        const uint CREATE_SHARED_WOW_VDM = 0x00001000;
+        const uint CREATE_SUSPENDED = 0x00000004;
+        const uint CREATE_UNICODE_ENVIRONMENT = 0x00000400;
+        const uint DEBUG_ONLY_THIS_PROCESS = 0x00000002;
+        const uint DEBUG_PROCESS = 0x00000001;
+        const uint DETACHED_PROCESS = 0x00000008;
+        const uint EXTENDED_STARTUPINFO_PRESENT = 0x00080000;
+        const uint INHERIT_PARENT_AFFINITY = 0x00010000;
+
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
         struct STARTUPINFO
@@ -50,20 +69,15 @@ namespace Main
             public IntPtr hStdOutput;
             public IntPtr hStdError;
         }
+        public static int si;
+        public static int pi;
+        public static void CreateProcess(string reference, int arg1, int arg2, int arg3, bool security, uint flag, int arg4, int arg5, StartupInfo startupinfo, ProcessInfo procinfo) {
+            procinfo.flag = flag;
+           
+        }
+    }
 
-        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-        static extern bool CreateProñess(
-        string lpApplicationName,
-           string lpCommandLine,
-           ref SECURITY_ATTRIBUTES lpProcessAttributes,
-           ref SECURITY_ATTRIBUTES lpThreadAttributes,
-           bool bInheritHandles,
-           uint dwCreationFlags,
-           IntPtr lpEnvironment,
-           string lpCurrentDirectory,
-           [In] ref STARTUPINFO lpStartupInfo,
-           out PROCESS_INFORMATION lpProcessInformation);
-
+    class ProcessInfo {
 
         const uint ZERO_FLAG = 0x00000000;
         const uint CREATE_BREAKAWAY_FROM_JOB = 0x01000000;
@@ -82,54 +96,37 @@ namespace Main
         const uint DETACHED_PROCESS = 0x00000008;
         const uint EXTENDED_STARTUPINFO_PRESENT = 0x00080000;
         const uint INHERIT_PARENT_AFFINITY = 0x00010000;
+        public  bool ExitCode = true;
+    public uint flag { get; set; }
+    public void InvokeCallStream(ProcessStream stream) {
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            try
+            if (flag == CREATE_NEW_CONSOLE)
             {
-                int num = Convert.ToInt32(textBox1.Text);
-                int system = Convert.ToInt32(comboBox1.Text);
-                string result = "";
-                if (system == 3)
-                {
-                    var dll = Assembly.LoadFile(System.AppContext.BaseDirectory + "\\toTrenary.dll");
-                    foreach (Type type in dll.GetExportedTypes())
-                    {
-                        result = type.InvokeMember("toTrenary", BindingFlags.InvokeMethod, null, Activator.CreateInstance(type), new object[] { num }).ToString();
-                    }
-
-                }
-                else
-                {
-                    result = Convert.ToString(num, system);
-                }
-
-                ProcessInfo pi = new ProcessInfo();
-                StartupInfo si = new StartupInfo();
-                ProcessStream stream = new ProcessStream(result);
-                if (checkBox1.Checked)
-                {
-                    Kernel32.CreateProcess("Main.exe", 0,0,0, false, CREATE_NEW_CONSOLE, 0, 0, si,pi );
-                  
-                   
-                }
-                else {
-                    Kernel32.CreateProcess("Main.exe", 0, 0, 0, false, DETACHED_PROCESS, 0, 0,si, pi);
-                }
-                if (pi.ExitCode)
-                {
-                    pi.InvokeCallStream(stream);
-                }
+                Process p = new Process();
+                p.StartInfo.FileName = "cmd.exe";
+                p.StartInfo.Arguments = "/c start echo "+stream.t;
+                p.StartInfo.CreateNoWindow = false;
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                p.Start();
+            }
+            else {
+                File.WriteAllText(System.AppContext.BaseDirectory + "\\result.txt", stream.t);
 
             }
-            catch (Exception ec)
-            {
-                MessageBox.Show(ec.Message);
-          
-            }
-            
         }
+    }
+    class StartupInfo
+    {
        
+       
+
+    }
+    class ProcessStream{
+        public string t;
+        public ProcessStream(string t) {
+
+            this.t = t;
+        }
     }
 }

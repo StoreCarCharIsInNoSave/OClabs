@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\4\\Main\\Main\\Main.csproj": {}
+    "C:\\Users\\Lain\\Desktop\\fgf\\OClabs\\4\\Main\\Main\\Main.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\4\\Main\\Main\\Main.csproj": {
+    "C:\\Users\\Lain\\Desktop\\fgf\\OClabs\\4\\Main\\Main\\Main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\4\\Main\\Main\\Main.csproj",
+        "projectUniqueName": "C:\\Users\\Lain\\Desktop\\fgf\\OClabs\\4\\Main\\Main\\Main.csproj",
         "projectName": "Main",
-        "projectPath": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\4\\Main\\Main\\Main.csproj",
+        "projectPath": "C:\\Users\\Lain\\Desktop\\fgf\\OClabs\\4\\Main\\Main\\Main.csproj",
         "packagesPath": "C:\\Users\\Lain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lain\\Desktop\\лабы универ\\OClabs\\4\\Main\\Main\\obj\\",
+        "outputPath": "C:\\Users\\Lain\\Desktop\\fgf\\OClabs\\4\\Main\\Main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lain\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,8 @@
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
