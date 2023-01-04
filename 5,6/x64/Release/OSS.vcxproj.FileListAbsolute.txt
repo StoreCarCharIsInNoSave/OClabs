@@ -1,0 +1,7 @@
+C:\Aducation\OSS\x64\Release\OSS.exe
+C:\Aducation\OS5_6\x64\Release\OSS.exe
+A:\LAB C++\OS5_6\x64\Release\OSS.exe
+A:\Учеба\2 курс 1 семместр\LAB C++\Лабораторные 5, 6 ОС (итог)\x64\Release\OSS.exe
+A:\Учеба\2 курс 1 семместр\LAB C++\мои лабы\Лабораторные 5, 6 ОС (итог)\x64\Release\OSS.exe
+A:\Учеба\2 курс 1 семместр\ОС\LAB C++\мои лабы\Лабораторные 5, 6 ОС (итог)\x64\Release\OSS.exe
+C:\Users\Lain\Desktop\Лабораторные 5, 6 ОС (итог)\x64\Release\OSS.exe

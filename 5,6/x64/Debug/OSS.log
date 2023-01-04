@@ -1,0 +1,12 @@
+﻿  Source.cpp
+C:\Aducation\OSS\Source.cpp(14,9): warning C4068: неизвестная прагма "argsused"
+C:\Aducation\OSS\Source.cpp(26,5): error C2086: iterator_traits<_Iter>::difference_type std::count(const _InIt,const _InIt,const _Ty &): переопределение
+C:\Aducation\OSS\Source.cpp(20): message : см. объявление "count"
+C:\Aducation\OSS\Source.cpp(95,33): error C2563: несоответствие в списке формальных параметров
+C:\Aducation\OSS\Source.cpp(112,36): error C2563: несоответствие в списке формальных параметров
+C:\Aducation\OSS\Source.cpp(112,36): error C2568: <: не удается разрешить перегрузку функции
+C:\Aducation\OSS\Source.cpp(112,36): message : может быть "iterator_traits<_Iter>::difference_type std::count(const _InIt,const _InIt,const _Ty &)"
+C:\Aducation\OSS\Source.cpp(119,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Aducation\OSS\Source.cpp(136,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Aducation\OSS\Source.cpp(152,43): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Aducation\OSS\Source.cpp(206,36): error C2563: несоответствие в списке формальных параметров

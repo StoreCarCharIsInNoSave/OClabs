@@ -1,0 +1,4 @@
+C:\Aducation\Process\x64\Debug\Process.exe
+C:\Aducation\OS5_6\Process\x64\Debug\Process.exe
+A:\LAB C++\OS5_6\Process\x64\Debug\Process.exe
+A:\Учеба\2 курс 1 семместр\ОС\LAB C++\мои лабы\Лабораторные 5, 6 ОС (итог)\Process\x64\Debug\Process.exe
